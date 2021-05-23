@@ -1,0 +1,45 @@
+Áp dụng transaction (cart,order) ok
+Validate cho tất cả API ok
+Report sử dụng aggregate ok
+Sửa lại thông báo ok
+Sử dụng Ref ok
+Error Handller ok
+Sửa lại addCart ok
+
+phân trang ok
+sửa lại chức năng order,lấy dữ liệu từ cart ok
+sử lý lỗi cho mỗi Validate
+ 
+
+clean code
+
+
+
+BaseService {
+   create, find....
+}
+ category.service.js  {
+   ...BaseService,
+  findWith
+ }
+
+Controller {try, catch} ok
+BaseResponse {   ok
+  statusCode,
+  data,
+  message  
+}
+BaseError extend Error {
+  statusCode,
+  errorCode,
+  message
+}
+
+throw new BaseErrror({statusCode: 400, error: errorList.NoExistUser})
+
+{
+  statusCode: 400,
+  errorCode: errorList.NoExistUser.errorCode,
+}
+
+tach' route
